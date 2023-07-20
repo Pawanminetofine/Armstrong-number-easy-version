@@ -1,0 +1,20 @@
+// By easy version if the sum of the cubes oof the digits of a number=number then this number is the armstrong number
+#include <stdio.h>
+int n,p=1,sum=0;
+int main(){
+printf("enter the value of the n ");
+scanf("%d",&n);
+int a=n;
+   while(n!=0){
+       int b=n%10;
+       n=n/10;
+       p=b*b*b;
+       sum=sum+p;
+   }if(a==sum){
+printf("%d is the armstrong number",a);
+}
+else{
+    printf("%d is not the armstrong number",a);
+}
+    return 0;
+}
